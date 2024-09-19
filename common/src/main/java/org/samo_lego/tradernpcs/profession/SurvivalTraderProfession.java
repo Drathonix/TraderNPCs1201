@@ -120,7 +120,7 @@ public class SurvivalTraderProfession extends TraderNPCProfession {
 
     private void setOwner() {
         final AABB box = this.npc.getBoundingBox().inflate(4.0D);
-        final Iterator<ServerPlayer> playersIt = this.npc.getLevel().getEntitiesOfClass(ServerPlayer.class, box).iterator();
+        final Iterator<ServerPlayer> playersIt = this.npc.level().getEntitiesOfClass(ServerPlayer.class, box).iterator();
 
         // Assign player to profession
         if (playersIt.hasNext()) {

@@ -6,6 +6,9 @@ dependencies {
     // Taterzens
     // We need this for profession API
     modCompileOnly("com.github.samolego.Taterzens:taterzens-fabric:${project.taterzens}")
+    modImplementation("eu.pb4.sgui:sgui:1.2.2")
+    //compileOnly(fileTree(dir: 'lib', include: ['*']))
+
 }
 
 architectury {

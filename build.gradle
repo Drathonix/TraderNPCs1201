@@ -39,10 +39,10 @@ allprojects {
             name 'LuckPerms'
             url 'https://oss.sonatype.org/content/repositories/snapshots'
         }
-        maven {
+        /*maven {
             name = "TomTheGeek-repo"
             url = "https://maven.tomthegeek.ml/releases/"
-        }
+        }*/
         maven {
             name = "CarpetMod maven"
             url 'https://masa.dy.fi/maven'
@@ -50,6 +50,9 @@ allprojects {
         maven {
             name = "Nucleoid maven"
             url = "https://maven.nucleoid.xyz/"
+        }
+        flatDir {
+            dirs '../lib'
         }
     }
 

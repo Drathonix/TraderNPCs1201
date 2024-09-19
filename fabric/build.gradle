@@ -29,6 +29,8 @@ dependencies {
     // Taterzens
     // We need this for profession API
     modImplementation("com.github.samolego.Taterzens:taterzens-fabric:${project.taterzens}")
+    modImplementation("eu.pb4.sgui:sgui:1.2.2")
+    //compileOnly(fileTree(dir: 'lib', include: ['*']))
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
